@@ -1,0 +1,763 @@
+# Write a program in python to add two numbers and print the result.
+n1=int(input('Enter the first number:'))
+n2=int(input('Enter the second number:'))
+print('The sum of both numbers='n1+n2)
+
+# Write a program in python to find the area of a triangle.
+h=int(input('Enter the height of the triangle:'))
+b=int(input('Enter the length of the base of the triangle:'))
+print('Height of the triangle is',0.5*h*b)
+
+# Write a program in python to find square root of a number.
+n=int(input('Enter a number:'))
+print('The square root of',n,'is',n**0.5)
+
+# Write a program in python to solve a quadratic equation
+a=int(input(‘Enter the value of a:’))
+b=int(input(‘Enter the value of b:’))
+c = int(input("Enter the value of c: "))
+D=(b**2)-(4*a*c)
+root1 = (-b - cmath.sqrt(D))/(2 * a)
+root2 = (-b + cmath.sqrt(D))/(2 * a)
+
+# Write a program in python to convert Fahrenheit to Celsius
+f=int(input('Enter the temperate in Fahrenheit:'))
+print('The temperate in Celsius is',(f-32)*5/9)
+
+# Write a program in python to find quotient and reminder after division.
+m1=int(input('Enter marks of first test:'))
+m2=int(input('Enter marks of second test:'))
+m3=int(input('Enter marks of third test:'))
+print('The average of three marks is',(m1+m2+m3)/3)
+
+# Write a program in python to swap two numbers using tuple assignment.
+a=int(input('enter the first number:'))
+b=int(input('Enter the second number:'))
+(a,b)=(b,a)
+print('The first number is,',a)
+print('The second number is,' b)
+
+# Write a program in python to calculate simple interest
+p=int(input('Enter the principal amount:'))
+r=int(input('Enter the rate of interest:'))
+t=int(input('Enter the time in years:'))
+print('The simple interest will be',(p*r*t)/100)
+
+# Given age determine whether a person is eligible to vote or not
+Age=int(input(‘Enter your age:’)
+If age>=18:
+   print(‘You are eligible to vote’)
+Else:
+   print(‘You are not eligible to vote’)
+
+# Check whether a number is odd or even
+num=int(input(‘Enter the number:’)
+if num%2==0:
+   print(‘The number is even’)
+else:
+   print(‘The number is odd’)
+
+# Write a program to find largest of two numbers
+num1=int(input(‘Enter the first number:’))
+num2=int(input(‘Enter the second number:’)
+if num1>num2:
+   print(num1,’is larger’)
+else:
+   print(num2,’is larger’)
+
+# Obtain a character convert lower case to uppercase and vice versa
+ch = input("Enter your Character : ")
+if(ch.isupper()):
+    print(ch.lower())
+elif(ch.islower()):
+    print(ch.upper())
+
+# Find the input year is leap year or not.
+def CheckLeap(Year):  
+  if((Year % 400 == 0) or  
+     (Year % 100 != 0) and  
+     (Year % 4 == 0)):   
+    print("Given Year is a leap Year");  
+  else:  
+    print ("Given Year is not a leap Year")  
+Year = int(input("Enter the number: ")) 
+CheckLeap(Year) 
+
+# Read a number, check if it is positive, negative or zero. Increment the number if it is positive, decrement if it is negative
+n=int(input('Enter a number:'))
+if n>0:
+  print(n+1)
+elif n<0:
+  print(n-1)
+else:
+  print('zero')
+
+# Create a simple calculator.
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+while True:
+    choice = input("Enter choice(1/2/3/4): ")
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+          break
+    else:
+        print("Invalid Input")
+
+# Estimate the Grade based on the marks obtained by a student.
+n=int(input('Enter your marks:'))
+if n>=90:
+  print('Your grade is A')
+elif n>=80 and n<90:
+  print('Your grade is B')
+elif n>=70 and n<80:
+  print('Your grade is C')
+elif n>=60 and n<70:
+  print('Your grade is D')
+elif n>=50 and n<60:
+  print('Your grade is E')
+else:
+  print('Youre grade is F')
+
+# Find the largest of 3 numbers
+a = int(input('Enter first number  : '))
+b = int(input('Enter second number : '))
+c = int(input('Enter third number  : '))
+largest = 0
+if a > b and a > c:
+    largest = a
+if b > a and b > c:
+    largest = b
+if c > a and c > b:
+    largest = c
+print(largest, "is the largest of three numbers.")
+
+# Obtain a character, check if it is lower case, uppercase or digit
+ch = input("Enter your Character : ")
+if(ch.isupper()):
+    print("The Given Character ", ch, "is an Uppercase Alphabet")
+elif(ch.islower()):
+    print("The Given Character ", ch, "is a Lowercase Alphabet")
+else(ch.isdigit()):
+    print("The Given Character ", ch, "is a digit")
+    
+# Write a program to check whether a number is odd or even.
+num=int(input(‘Enter the number:’)
+if num%2==0:
+   print(‘The number is even’)
+else:
+   print(‘The number is odd’)
+
+# Write a program in python to find the biggest of two numbers
+a = int(input('Enter first number  : '))
+b = int(input('Enter second number : '))
+largest = 0
+if a > b:
+   largest = a
+else:
+   largest=b
+print(largest, "is the largest of two numbers.")
+
+# Write a program to convert a character from lower case to uppercase and vice versa
+ch = input("Enter your Character : ")
+if(ch.isupper()):
+    print(ch.lower())
+elif(ch.islower()):
+    print(ch.upper())
+
+# Write a program in python to find whether a number is divisible by both 5 and 7
+n = int(input("Enter a number : "))
+if((n % 5 == 0) and (n % 7 == 0)):
+    print("Given Number is Divisible by 5 and 11")
+else:
+    print("Given Number is Not Divisible by 5 and 11")
+
+# Write a program to find the input year is leap year or not
+def CheckLeap(Year):  
+  if((Year % 400 == 0) or  
+     (Year % 100 != 0) and  
+     (Year % 4 == 0)):   
+    print("Given Year is a leap Year");  
+  else:  
+    print ("Given Year is not a leap Year")  
+Year = int(input("Enter the number: ")) 
+CheckLeap(Year) 
+
+# Write a program in python to input three sides of a triangle and check whether the triangle is equilateral, isosceles or scalene
+print("Input lengths of the triangle sides: ")
+x = int(input("x: "))
+y = int(input("y: "))
+z = int(input("z: "))
+
+if x == y == z:
+	print("Equilateral triangle")
+elif x==y or y==z or z==x:
+	print("isosceles triangle")
+else:
+	print("Scalene triangle")
+
+# Write a program in python to input three sides of a triangle and check whether it is right angled one
+side1 = int(input()) 
+side2 = int(input()) 
+side3 = int(input()) 
+if side3 <= (side1**2) + (side2**2) or side2 <= (side1**2) + (side2**3) or side1 <= (side3**2) + (side2**2)  :  
+    print("Right-angled")
+else:
+    print ("Not right-angled")
+
+# Read a number, check if it is positive, negative or zero. Increment the number if it is positive, decrement if it is negative
+n=int(input('Enter a number:'))
+if n>0:
+  print(n+1)
+elif n<0:
+  print(n-1)
+else:
+  print('zero')
+
+# Create a simple calculator.
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+while True:
+    choice = input("Enter choice(1/2/3/4): ")
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+          break
+    else:
+        print("Invalid Input")
+
+# Estimate the Grade based on the marks obtained by a student.
+n=int(input('Enter your marks:'))
+if n>=90:
+  print('Your grade is A')
+elif n>=80 and n<90:
+  print('Your grade is B')
+elif n>=70 and n<80:
+  print('Your grade is C')
+elif n>=60 and n<70:
+  print('Your grade is D')
+elif n>=50 and n<60:
+  print('Your grade is E')
+else:
+  print('Youre grade is F')
+
+# Obtain a character, check if it is lower case, uppercase or digit
+ch = input("Enter your Character : ")
+if(ch.isupper()):
+    print("The Given Character ", ch, "is an Uppercase Alphabet")
+elif(ch.islower()):
+    print("The Given Character ", ch, "is a Lowercase Alphabet")
+else(ch.isdigit()):
+    print("The Given Character ", ch, "is a digit")
+
+# Find the largest of 3 numbers
+a = int(input('Enter first number  : '))
+b = int(input('Enter second number : '))
+c = int(input('Enter third number  : '))
+largest = 0
+if a > b and a > c:
+    largest = a
+if b > a and b > c:
+    largest = b
+if c > a and c > b:
+    largest = c
+print(largest, "is the largest of three numbers.")
+
+# Compute Exponentiation (power of a number) without using ** operator
+n=int(input('Enter the base:'))
+p=int(input('Enter the exponent:'))
+m=1
+while p>0:
+  m=m*n
+  p=p-1
+print(m)
+
+# Write a program in python to print all the two digit numbers which are either divisible by 3 or by 4
+for i in range(1,100):
+  while i%4==0 or i%3==0: 
+    print(i)
+    i=i+1
+
+# Write a program in python to print the sum of all the digits of a number
+num= int(input('Enter number:'))
+sum=0
+while num>0:
+  d=num%10
+  num=int(num/10)
+  sum+=d
+print(sum)
+
+# Check whether the given number is palindrome or not
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
+else:
+    print("The number isn't a palindrome!")
+# Check whether the given number is Armstrong number or not
+n =  int(input(''))
+s = n  
+b = len(str(n))
+sum1 = 0
+while n != 0:
+    r = n % 10
+    sum1 = sum1+(r**b)
+    n = n//10
+if s == sum1:
+    print("The given number", s, "is armstrong number")
+else:
+    print("The given number", s, "is not armstrong number")
+
+# Compute the GCD of two numbers.(Euclidean Method and using common factors)
+x=int(input(''))
+y=int(input(''))
+def compute_gcd(x, y):
+   while(y):
+       x, y = y, x % y
+   return x
+gcd = compute_gcd(x, y)
+print("The GCD is", gcd)
+
+# Take integer inputs from user until he/she presses q (Ask to press q to quit after every integer input ). Print average and product of all numbers
+print("Start entering numbers")
+sum=0
+c=0
+while 1:
+    num=int(input())
+    c=c+1
+    sum=sum+num
+    print("Press q when you are done inputting the numbers or y to continue")
+    m=input()
+    if m=='q':
+        break
+print("Average",sum/c)
+print("Sum",sum)
+
+# Find the square root of a number
+def findSqrt(x):
+  if x < 2:
+    return x
+  y = x
+  z = (y + (x/y)) / 2
+  while abs(y - z) >= 0.00001:
+    y = z
+    z = (y + (x/y)) / 2
+    return z
+ if __name__ == '__main__':
+  n = 323242 
+  ans = findSqrt(n)
+  print(ans)
+  
+# Write a Python program to construct the following pattern, using a nested for loop.
+#a) 
+n=5
+for i in range(n):
+    for j in range(i):
+        print ('* ', end="")
+    print('')
+
+for i in range(n,0,-1):
+    for j in range(i):
+        print('* ', end="")
+    print('')
+
+#b)
+n=int(input())
+for i in range(n,0,-1):
+j=i
+while j>0:
+print(j,end=’’)
+j=j-1
+print()
+
+#c)
+n = 7
+for i in range(1, n+1):
+    for j in range(0, n-i+1):
+        print(' ', end='')
+    C = 1
+    for j in range(1, i+1):
+        print(' ', C, sep='', end='')
+        C = C * (i - j) // j
+    print()
+
+# Write a Python program that accepts a word from the user and reverse it
+word = input("Input a word to reverse: ")
+for char in range(len(word) - 1, -1, -1):
+  print(word[char], end="")
+print("\n")
+
+# Write a Python program to count the number of even and odd numbers from a series of numbers.
+Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+count_odd = 0
+count_even = 0
+for x in numbers:
+        if not x % 2:
+    	     count_even+=1
+        else:
+    	     count_odd+=1
+print("Number of even numbers :",count_even)
+print("Number of odd numbers :",count_odd)
+
+# Write a Python program that prints each item and its corresponding type from the following list. Sample List : datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+datalist= [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12],
+{"class":'V', "section":'A'}] 
+for item in datalist:
+   print ("Type of ",item, " is ", type(item))
+
+# Write a Python program that prints all the numbers from 0 to 6 except 3 and 6. Note : Use 'continue' statement.
+for x in range(6):
+    if (x == 3 or x==6):
+        continue
+    print(x,end=' ')
+print("\n")
+
+# Write a Python program which iterates the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
+for fizzbuzz in range(51):
+    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
+        print("fizzbuzz")
+        continue
+    elif fizzbuzz % 3 == 0:
+        print("fizz")
+        continue
+    elif fizzbuzz % 5 == 0:
+        print("buzz")
+        continue
+    print(fizzbuzz)
+	
+# Write a Python program to find numbers between 100 and 400 (both included) where each digit of a number is an even number. The numbers obtained should be printed in a comma-separated sequence
+items = []
+for i in range(100, 401):
+    s = str(i)
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0):
+        items.append(s)
+print( ",".join(items))
+
+# Write a Python program to create the multiplication table (from 1 to 10) of a number
+n = int(input("Input a number: "))
+for i in range(1,11):
+   print(n,'x',i,'=',n*i)
+
+# Find the sum of series:
+#1 + 1/2 + 1/3 + ….. + 1/N
+n=int(input("Enter the number of terms: "))
+sum1=0
+for i in range(1,n+1):
+    sum1=sum1+(1/i)
+print("The sum of series is",round(sum1,2))
+# Classify the given number is prime or composite number.
+n = int(input('Enter a number:'))
+if n > 1:
+for i in range(2, int(n/2)+1):
+  if (n % i) == 0:
+    print(n,'is not a prime number')
+    break
+  else:
+    print(n, "is a prime number")
+  else:
+    print(n, "is not a prime number")	
+    
+# Write a function power(X,N) that will allow a floating-point number to be raised to an integer power and return the result. i.e. Y = X N . Write a Python program to invoke the function
+def power(x,n):
+    l = x**n
+    return(l)
+b = int(input())
+c = int(input())
+print(power(b,c))
+
+# Define a function CheckOddEven(num) that checks if the num is odd or even; the function sets a flag accordingly and returns it. Use this function to find the sum of even and odd numbers separately, from a given input of N numbers.
+def CheckOddEven(n):
+    if n%2==0:
+        Flag = True
+        print("Number is even ")
+    else:
+        Flag = False
+        print("Number is odd")
+    return Flag
+print(CheckOddEven(int(input())))
+
+# Define a function to find the factors of the given number as an argument. If the number is not given, then display the factors of the default argument.
+def factors(n):
+    l =[]
+    for i in range(1,n):
+        if n%i == 0:
+            l.append(i)
+    return l
+print(factors(int(input())))
+
+# Calculate factorial of a given number using recursive function. The base case should handle the negative integers by printing an error message and returns none to indicate that something went wrong.
+n = int(input("enter number:"))
+i = 1
+fac = 1
+if n > 0:
+    while i <= n:
+        fac = fac*i
+        i += 1
+    print(fac)
+else:
+    print("Error")
+
+# Compute the sum of the digits of a given number using recursion.
+n = input("Give number: ")
+s = 0
+for digit in str(n):
+    s += int(digit)
+print(s)
+
+# Check whether a given number is prime or not using recursive function.
+num = int(input("give number: "))
+if num>1:
+    for i in range (2,num):
+        if num%i == 0:
+           print ("number is not prime")
+           break
+    else:
+        print("number is prime")
+
+# The greatest common divisor (GCD) of a and b is the largest number that divides both of them with no remainder. One way to find the GCD of two numbers is based on the observation that if r is the remainder when a is divided by b, then gcd(a, b) = gcd(b, r). As a base case, we can use gcd(a, 0) = a. Write a recursive function called gcd that takes parameters a and b and returns their greatest common divisor.
+a = int(input("Give number:  "))
+b = int(input("Give Number: "))
+def gcdExtended(a, b):
+    # Base Case
+    if a == 0:
+        return b, 0, 1
+    gcd, x1, y1 = gcdExtended(b % a, a)
+    x = y1 - (b // a) * x1
+    y = x1
+    return gcd, x, y
+
+
+# Driver code
+
+g, x, y = gcdExtended(a, b)
+print("gcd(", a, ",", b, ") = ", g)
+
+5) The Ackermann function, A(m, n) is defined as follows:
+ Solve the above problem recursively for different values of m and n.
+def A(m, n):
+    if m == 0:
+        f = n+1
+    elif m > 0 and n == 0:
+        f = A(m-1,1)
+    elif m > 0 and n > 0:
+        f = A(m-1, A(m, n-1))
+    return f
+s = int(input())
+t = int(input())
+print(A(s,t))
+
+# Define a function to count the number of occurrences of a substring in a given string and print the starting index of the substring for each occurrence
+m = input()
+def count(n):
+    s = m.count(n)
+    return s
+n = input()
+print(count(n))
+print(m.index(n))
+
+# Write a user-defined function to check whether a given text is palindrome or not using string slice method.
+s = input()
+
+reverse = s[::-1]
+if s== reverse:
+    print("it is a palindrome!")
+else:
+    print("It is not a palindrome.")
+
+# Write a function strip_characters(str,chars) which removes the characters mentioned in chars from the string str. E.g strip_characters(‘The quick brown fox jumps over the lazy dog’,’aeiou’) outputs ‘Th qck brwn fx jmps’
+
+def strip_characters(str):
+    h = str.replace('a','')
+    t = h.replace('e','')
+    y = t.replace('i','')
+    a = y.replace('o','')
+    q = a.replace('u','')
+    return q
+str = input()
+print(strip_characters(str))
+
+# Read a list of elements from the user and perform the following operations using functions: search(key): to find the given key in the list and display the position of the key if found, otherwise display appropriate message, maximum(Lst) and minimum(Lst) to find the maximum and minimum number respectively from the list.
+m = int(input())
+l = []
+for i in range(m):
+    n = int(input())
+    l.append(n)
+f = int(input("Key to be searched :"))
+if f in l:
+    print("Key is present")
+else:
+    print("Key is not present")
+l.sort()
+s = l[0]
+b = l[-1]
+print("Minimum in the list is ",s)
+print("maximum in the list is ",b)
+
+# Write a function sorted that takes a list as a parameter and sort the elements in lexicographical order. Test the function for a list of names and print the sorted list.
+a_list = ['Amy','Beni','Sri']
+b_list = sorted(a_list, key=str.lower)
+print(b_list)
+
+# A list of students registered for Python course. Perform the following operations (use inbuilt functions) and print the output:
+ # i. A new student registered for the course.
+ # ii. Count the number of students registered for the course.
+ # iii. Modify a name in the list.
+ # iv. Sort the name list.
+ # v. Insert a new student name in a given position. 
+# vi. Search for a student. 
+# vii. Remove a given name from the list.
+l = ['a', 'b', 'c', 'd']
+# 1 new student
+s = input("Enter the name of new student: ")
+l.append(s)
+# 2 no of students
+e = len(l)
+print("Number of students registered: ", e)
+# 3 sorting the list
+q = l.sort()
+print(q)
+# 4 inserting
+n = input("Name to be inserted: ")
+l.append(n)
+# 5 Search
+w = input("Name to be searched: ")
+if w in l:
+    print("Student is present")
+else:
+    print("Student is absent")
+# 6 Remove
+l.remove('a')
+print(l)
+
+# Consider a tuple as T = (1, 3, 2, 4, 6, 5). Write a program to store numbers present at odd index into a new tuple.
+t = (1,3,2,4,6,5)
+def oddTuples(aTup):
+    return aTup[::2]
+nt = oddTuples(t)
+print(nt)
+
+# Consider a list containing food items. Another list contains its corresponding price. Create these two lists by getting the input from user. Now get the items ordered by the customer in a tuple. Display the total cost of the ordered food.
+ Example: Available Fruits: Oranges, Mangoes, Apple, Grapes, Papaya 
+Price per Kg: 60, 80, 220, 80, 90
+ Your order (in Kgs): 2, 0, 1, 0, 0.500 
+Total Amount: Rs. 340
+n = int(input())
+l1 = []
+l2 = []
+l3 = []
+st = 0
+for i in range (n):
+    f = input()
+    p = int(input())
+    o = int(input())
+    st = st + p*o
+    l1.append(f)
+    l2.append(p)
+    l3.append(o)
+print(l1)
+print(l2)
+print(l3)
+print(st)
+
+# Matrix is a rectangular array of data or numbers. The horizontal entries in a matrix are called as ‘rows’ while the vertical entries are called as ‘columns’. If a matrix has r number of rows and c number of columns, then the order of matrix is given by r X c. Get the values of r and c from the user. Write a function to create and return the r X c matrix with the user input. Write another function to print the sums of each row.
+r = int(input())
+c = int(input())
+l1 = []
+for i in range (c):
+    l2 = []
+    for i in range (r):
+        n = input()
+        l2.append(n)
+    l1.append(l2)
+print(l1)
+
+print ('\n'.join([' '.join(row) for row in l1]))
+
+# Find the transpose of a given matrix using list comprehension.
+r = int(input())
+c = int(input())
+l1 = []
+for i in range (c):
+    l2 = []
+    for i in range (r):
+        n = input()
+        l2.append(n)
+    l1.append(l2)
+print(l1)
+for cols in zip(*l1):  # transposed
+    print(' '.join(cols))
+    
+# Write a user-defined function to print and store squares of numbers for the given range into a dictionary. Example: For range 2 to N (both inclusive): If N = 5, the contents of the dictionary would be {2: 4, 3: 9, 4: 16, 5: 25}
+n = int(input())
+d ={}
+for i in range(2,n+1):
+    d[i]=i**2
+print(d)
+
+# Create a new dictionary by combining two dictionaries whose key-value pairs are given. The new dictionary has to be created by adding values for common keys from the two dictionaries. 
+Dict1 = {'A': 100, 'B': 200, 'C':300}
+ Dict2 = {'A': 300, 'B': 500, 'D':400}
+ Sample output: NewDict = {'A': 400, 'B': 700, 'C': 300, 'D': 400}
+Dict1 = {'A': 100, 'B': 200, 'C':300}
+Dict2 = {'A': 300, 'B': 500, 'C':400}
+newd = {}
+for i in Dict1.keys():
+    if i in Dict2.keys():
+        newd[i]=Dict1[i]+Dict2[i]
+print(newd)
+  
+
+
+
+
+
+
+
